@@ -1,0 +1,84 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    color: white;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .clock-container {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.sidebar .clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3b82f6;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .date {
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+}
+
+.dark {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark .bg-dark-100 {
+    background-color: #1a1a1a;
+}
+
+.dark .bg-dark-200 {
+    background-color: #2d2d2d;
+}
+
+.dark .bg-dark-300 {
+    background-color: #3f3f3f;
+}
+
+.dark .text-dark {
+    color: #ffffff;
+}
+
+/* Form input styles for dark theme */
+.dark input,
+.dark textarea,
+.dark select {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #3f3f3f;
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Placeholder styles for dark theme */
+.dark input::placeholder,
+.dark textarea::placeholder {
+    color: #6b7280;
+}

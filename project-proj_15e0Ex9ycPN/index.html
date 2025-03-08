@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Laptop servis ve tamir yönetim sistemi">
+    <meta name="keywords" content="laptop, servis, tamir, yönetim, sistem">
+    <meta property="og:title" content="Laptop Servis Yönetimi">
+    <meta property="og:description" content="Profesyonel laptop servis ve tamir yönetim sistemi">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Laptop Servis Yönetimi">
+    <meta name="twitter:description" content="Profesyonel laptop servis ve tamir yönetim sistemi">
+    
+    <title>Laptop Servis Yönetimi</title>
+    
+    <!-- React and Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet">
+    <link href="styles/dashboard.css" rel="stylesheet">
+    <link href="styles/login.css" rel="stylesheet">
+    <link href="styles/reports.css" rel="stylesheet">
+</head>
+<body class="bg-dark-100 text-gray-100">
+    <div id="root"></div>
+
+    <!-- Utils -->
+    <script type="text/babel" src="utils/storage.js"></script>
+    <script type="text/babel" src="utils/constants.js"></script>
+    <script type="text/babel" src="utils/mockData.js"></script>
+    <script type="text/babel" src="utils/api.js"></script>
+    <script type="text/babel" src="utils/validation.js"></script>
+    <script type="text/babel" src="utils/formatters.js"></script>
+    <script type="text/babel" src="utils/emailService.js"></script>
+    <script type="text/babel" src="utils/notificationService.js"></script>
+    <script type="text/babel" src="utils/auth.js"></script>
+
+    <!-- Components: Auth -->
+    <script type="text/babel" src="components/auth/LoginForm.js"></script>
+    <script type="text/babel" src="components/auth/ForgotPassword.js"></script>
+
+    <!-- Components: Layout -->
+    <script type="text/babel" src="components/layout/Header.js"></script>
+    <script type="text/babel" src="components/layout/Sidebar.js"></script>
+    <script type="text/babel" src="components/layout/Layout.js"></script>
+
+    <!-- Components: Device -->
+    <script type="text/babel" src="components/device/CustomerSection.js"></script>
+    <script type="text/babel" src="components/device/DeviceSection.js"></script>
+    <script type="text/babel" src="components/device/ProblemSection.js"></script>
+    <script type="text/babel" src="components/device/ServiceForm.js"></script>
+    <script type="text/babel" src="components/device/DeviceForm.js"></script>
+    <script type="text/babel" src="components/device/DeviceSearch.js"></script>
+
+    <!-- Components: Dashboard -->
+    <script type="text/babel" src="components/dashboard/Dashboard.js"></script>
+    <script type="text/babel" src="components/dashboard/Charts.js"></script>
+    <script type="text/babel" src="components/dashboard/StatusCard.js"></script>
+    <script type="text/babel" src="components/dashboard/RecentDevices.js"></script>
+
+    <!-- Components: Customers -->
+    <script type="text/babel" src="components/customers/CustomerList.js"></script>
+    <script type="text/babel" src="components/customers/CustomerForm.js"></script>
+    <script type="text/babel" src="components/customers/CustomerDetail.js"></script>
+
+    <!-- Components: Reports -->
+    <script type="text/babel" src="components/reports/ServiceReports.js"></script>
+    <script type="text/babel" src="components/reports/FinancialReports.js"></script>
+
+    <!-- Components: Settings -->
+    <script type="text/babel" src="components/settings/Settings.js"></script>
+    <script type="text/babel" src="components/settings/GeneralSettingsTab.js"></script>
+    <script type="text/babel" src="components/settings/ReportSettingsTab.js"></script>
+
+    <!-- Components: Expenses -->
+    <script type="text/babel" src="components/expenses/ExpensesPage.js"></script>
+
+    <!-- Components: Notifications -->
+    <script type="text/babel" src="components/notifications/NotificationList.js"></script>
+
+    <!-- Main App -->
+    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="components/settings/ExpenseForm.js"></script>
+    <script type="text/babel" src="components/settings/ReportSettings.js"></script>
+    <script type="text/babel" src="components/settings/GeneralSettings.js"></script>
+    <script type="text/babel" src="components/reports/ReportsPage.js"></script>
+    <script type="text/babel" src="utils/googleDriveStorage.js"></script>
+    <script type="text/babel" src="components/settings/GoogleDriveSettings.js"></script>
+</body>
+</html>
